@@ -20,14 +20,14 @@ x11 = ["winit/x11", "egui-winit/x11"]
 
 [dependencies]
 ahash = "0.8.3"
-egui-winit = { version = "0.24", default-features = false }
-egui = "0.24"
+egui-winit = { path = "../egui/crates/egui-winit", default-features = false }
+egui = { path = "../egui/crates/egui" }
 image = { version = "0.24.5", optional = true }
-winit = { version = "0.28", default-features = false }
-vulkano = "0.34"
-vulkano-shaders = "0.34"
+winit = { version = "0.30.4", default-features = false }
+vulkano = { path = "../vulkano/vulkano" }
+vulkano-shaders = { path = "../vulkano/vulkano-shaders" }
 
 [dev-dependencies]
 cgmath = "0.18.0"
 egui_demo_lib = "0.24"
-vulkano-util = "0.34"
+# vulkano-util = "0.34"
